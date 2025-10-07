@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('content/home/image1_leaving (2).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainContainer {
+    width: 90%;
+    max-width: 1670px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.contentText {
+    width: 50%;
+    max-width: 650px;
+}
+.contentText h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+.contentText p {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 30px;
+}
+.contentText button {
+    background-image: linear-gradient(to right, #FF1B32, #FF394D, #FB4765);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Who we are                                 */
+/* -------------------------------------------------------------------------- */
+
+.whowearecontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whoweare {
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    padding: 50px 20px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+.whoText {
+    width: 45%;
+}
+.whoText h2 {
+    font-size: 45px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.whoText h3 {
+    font-size: 30px;
+    color: #555;
+    line-height: 1.6;
+}
+.whoText p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+.whoImg {
+    width: 45%;
+}
+.whoImg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Your options                                */
+/* -------------------------------------------------------------------------- */
+
+.youroptionsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youroptions {
+    width: 90%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.youroptions strong {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.optionText {
+    display: flex;
+    justify-content: space-between;
+}
+
+.optionTxt ul {
+    list-style-type: number;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #444;
+}
+.optionTxt img {
+    width: 100%;
+}
+.downText {
+    display: flex;
+    flex-direction: column;
+}
+.downText p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              common questions                              */
+/* -------------------------------------------------------------------------- */
+    .questions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 120px 0;
+    }
+    .faq-container {
+      width: 90%;
+      max-width: 1540px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .questions h2 {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 2.6rem;
+      color: #333;
+    }
+
+    .faq-item {
+      border-top: 1px solid #ddd;
+    }
+
+    .faq-question {
+      background: #fff;
+      color: #333;
+      padding: 15px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background: #f0f0f0;
+    }
+
+    .faq-question.active {
+      background: #d60000;
+      color: #fff;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      font-size: 1.15rem;
+      color: #555;
+      line-height: 1.5;
+      background: #fafafa;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-answer.open {
+      padding: 15px 20px;
+    }
+
+    .icon {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question.active .icon {
+      transform: rotate(90deg);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .faq-question {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+      }
+      .faq-container h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+/* -------------------------------------------------------------------------- */
+/*                               reviews Clients                              */
+/* -------------------------------------------------------------------------- */
+
+.textReviewsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewClients h1{
+    text-align: center;
+    font-size: 46px;
+    color: #333;
+    margin: 40px 0;
+    width: 800px;
+
+}
+.ctext {
+    color: #FB4765;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Extra details header                            */
+/* -------------------------------------------------------------------------- */
+.nav-bar .nav-list {
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .mainContainer {
+        width: 90%;
+        max-width: 781px;
+        justify-content: start;
+    }
+    .contentText {
+        width: 100%;
+        max-width: 480px;
+    }
+    .contentText h1 {
+        color: #000;
+    }
+    .contentText p {
+        color: #000;
+    }
+}
+
+@media (max-width: 900px) {
+    .whoweare {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whoText { 
+        width: 90%;
+    }
+    .whoImg {
+        width: 90%;
+    }
+
+    .optionText {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 730px) {
+    main {
+        background-position: 30%;
+    }
+}
+@media (max-width: 440px) {
+    .contentText h1 {
+        font-size: 35px;
+    }
+}

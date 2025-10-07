@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 form style                                 */
+/* -------------------------------------------------------------------------- */
+
+.contactUsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(content/contact/background-form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    width: 90%;
+    max-width: 1800px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.infoContactUs {
+    width: 98%;
+    max-width: 640px;
+    display: flex;
+    justify-content: space-between;
+}
+.infoContact {
+    width: 49%;
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff4d;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.infoContact img {
+    width: 60px;
+}
+
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff4d;
+  font-family: Arial, sans-serif;
+}
+
+.form-row {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: #ff4d4d;
+  outline: none;
+  box-shadow: 0 0 4px rgba(255, 77, 77, 0.5);
+}
+
+.form-row button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #ff4d4d, #ff6666);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-row button:hover {
+  background: linear-gradient(to right, #e60000, #ff1a1a);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                extra styles                                */
+/* -------------------------------------------------------------------------- */
+
+.nav-list {
+    color: #ffffff;
+}
+
+
+@media (max-width: 530px) {
+  .infoContact img {
+    width: 30px;
+  }
+  .infoContactText {
+    font-size: 12px;
+}
+}
+@media (max-width: 350px) {
+  .infoContactUs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .infoContact {
+    width: 100%;
+  }
+  form {
+    padding: 20px 16px;
+  }
+}
