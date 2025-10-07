@@ -1,0 +1,143 @@
+.preFooter {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preFooter .imgPreFooter {
+    width: 50%;
+    height: 100%;
+    background-image: url('../content//footer/image3_strechinghands.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.preFooter .textPreFooter {
+    width: 50%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.textPreFooter {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 40px;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 40px;
+    background-color: #EFEFEF;
+}
+.footerContainer {
+    width: 90%;
+    max-width: 1600px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.firstPart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstPart button {
+    background-image: linear-gradient(to right, #FF1B32, #FF394D, #FB4765);
+    color: white;
+    outline: none;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.infoFooter {
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 80px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+.elemFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000;
+}
+.elemFooter p {
+    margin: 0;
+    color: #000;
+}
+.elemFooter a {
+    text-decoration: none;
+    color: #000;
+}
+.elemFooter a:hover {
+    color: #FB4765;
+}
+.footerLastPart {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.footerLastPart a {
+    text-decoration: none;
+    color: #000;
+}
+.footerLastPart a:hover {
+    color: #FF1B32;
+}
+.ctext {
+    color: #FB4765;
+}
+
+@media (max-width: 1140px) {
+    .textPreFooter {
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 710px) {
+    .preFooter {
+        display: flex;
+        flex-direction: column;
+    }
+    .preFooter .imgPreFooter {
+        width: 100%;
+    }
+
+    .preFooter .textPreFooter {
+        width: 100%;
+        padding: 0;
+        font-size: 15px;
+    }
+    .infoFooter {
+        flex-direction: column;
+        align-items: start;
+    }
+    .firstPart img {
+        width: 100px;
+    }
+}

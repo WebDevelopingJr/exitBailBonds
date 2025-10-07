@@ -1,0 +1,70 @@
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: transparent;   /* 👈 agrega esto */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px); /* efecto glass bonito */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+header.scrolled .nav-bar .nav-list {
+    color: #000;
+}
+
+.headerContainerNav {
+    width: 90%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerContainerNav .logoImg {
+    width: 150px;
+}
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.nav-bar .nav-list { 
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-button {
+    padding: 10px 20px;
+    color: #fff;
+    background-image: linear-gradient(to right, #FF1B32, #FF394D, #FB4765);
+    border: none;
+    cursor: pointer;
+}
+
+.hbgIcon {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+@media (max-width: 765px) {
+    .nav-bar {
+        display: none;
+    }
+    .hbgIcon {
+        display: block;
+    }
+    .headerContainerNav .logoImg {
+    width: 90px;
+    }
+}
