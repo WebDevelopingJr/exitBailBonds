@@ -175,6 +175,7 @@ main {
     background-image: linear-gradient(to right, #FF1B32, #FF394D, #FB4765);
     border: none;
     padding: 10px 20px;
+    cursor: pointer;
 }
 .benefitLol::before {
     content: '';
@@ -187,6 +188,11 @@ main {
 }
 .personLeaving {
     background-image: url(content/About/image3_personLeavingJail.png);
+    background-position: center;
+    background-size: cover;
+}
+.confidenceImg {
+    background-image: url(content/About/confidence.png);
     background-position: center;
     background-size: cover;
 }

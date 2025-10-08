@@ -15,7 +15,7 @@
             <div class="contentText">
                 <h1>Fast, Reliable, 24/7 Service</h1>
                 <p>With years of proven experience, we’re here to help you or your loved ones anytime, anywhere.</p>
-                <button>GET HELP NOW</button>
+                <a href="/contactus.html"><button>GET HELP NOW</button></a>
         </div>
         </div>
     </main>
@@ -237,7 +237,6 @@
       });
     });
 </script>
-
 <script>
   window.addEventListener("scroll", () => {
     const header = document.getElementById("main-header");
@@ -247,8 +246,31 @@
       header.classList.remove("scrolled");
     }
   });
-    
 
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        const currentlyActive = document.querySelector(".faq-question.active");
+        if (currentlyActive && currentlyActive !== q) {
+          currentlyActive.classList.remove("active");
+          currentlyActive.nextElementSibling.style.maxHeight = 0;
+          currentlyActive.nextElementSibling.classList.remove("open");
+        }
+
+        q.classList.toggle("active");
+        const answer = q.nextElementSibling;
+        if (q.classList.contains("active")) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          answer.classList.add("open");
+        } else {
+          answer.style.maxHeight = 0;
+          answer.classList.remove("open");
+        }
+      });
+    });
+    
+    
 
   </script>
 
