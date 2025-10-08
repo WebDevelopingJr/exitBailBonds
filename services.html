@@ -118,10 +118,17 @@
     });
 </script>
 <script> 
-    fetch('utils/header.html')
+  fetch('utils/header.html')
     .then(response => response.text())
     .then(data => {
-        document.querySelector('.headerContainer').innerHTML = data;
+      document.querySelector('.headerContainer').innerHTML = data;
+
+     
+      const iconMenu = document.getElementById("hbgIcon");
+      const menuHeader = document.getElementById("menuHeader");
+      iconMenu.addEventListener("click", () => {
+        menuHeader.classList.toggle("showMenu");
+      });
     });
 </script>
 <script>

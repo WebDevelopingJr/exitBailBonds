@@ -224,12 +224,20 @@
     });
 </script>
 <script> 
-    fetch('utils/header.html')
+  fetch('utils/header.html')
     .then(response => response.text())
     .then(data => {
-        document.querySelector('.headerContainer').innerHTML = data;
+      document.querySelector('.headerContainer').innerHTML = data;
+
+      
+      const iconMenu = document.getElementById("hbgIcon");
+      const menuHeader = document.getElementById("menuHeader");
+      iconMenu.addEventListener("click", () => {
+        menuHeader.classList.toggle("showMenu");
+      });
     });
 </script>
+
 <script>
   window.addEventListener("scroll", () => {
     const header = document.getElementById("main-header");
@@ -239,30 +247,9 @@
       header.classList.remove("scrolled");
     }
   });
-
-    const questions = document.querySelectorAll(".faq-question");
-
-    questions.forEach(q => {
-      q.addEventListener("click", () => {
-        const currentlyActive = document.querySelector(".faq-question.active");
-        if (currentlyActive && currentlyActive !== q) {
-          currentlyActive.classList.remove("active");
-          currentlyActive.nextElementSibling.style.maxHeight = 0;
-          currentlyActive.nextElementSibling.classList.remove("open");
-        }
-
-        q.classList.toggle("active");
-        const answer = q.nextElementSibling;
-        if (q.classList.contains("active")) {
-          answer.style.maxHeight = answer.scrollHeight + "px";
-          answer.classList.add("open");
-        } else {
-          answer.style.maxHeight = 0;
-          answer.classList.remove("open");
-        }
-      });
-    });
     
+
+
   </script>
 
   
