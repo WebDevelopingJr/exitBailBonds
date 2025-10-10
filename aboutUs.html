@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="aboutUs.css">
     <link rel="stylesheet" href="utils/footer.css">
     <link rel="stylesheet" href="utils/header.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>About Us</title>
 </head>
     <div class="headerContainer"></div>
 <body>
     <main>
         <div class="mainContainer">
-            <img src="content/About/image1_handshake_about.png" alt="mainImg">
+            <img src="content/About/image1_handshake_about-retouch.png" alt="mainImg">
             <h1>Trusted experience, proven results, and 24/7 support you can count on. We’re here to protect your freedom and your peace of mind</h1>
         </div>
     </main>
@@ -58,25 +59,25 @@
     <br><br><br><br>
     <div class="benefits">
       <div class="benefitsContainer">
-        <div class="benefitLol girlPhone">
+        <div data-aos="fade-right" class="benefitLol girlPhone">
           <h2>24/7 Availability</h2>
           <p>Always ready to help, day or night</p>
           <a href="/services.html"><button>See more</button></a>
         </div>
 
-        <div class="benefitLol personLeaving">
+        <div data-aos="fade-right" class="benefitLol personLeaving">
           <h2>Fast Release Process</h2>
           <p>Quick paperwork and immediate action.</p>
           <a href="/services.html"><button>See more</button></a>
         </div>
 
-        <div class="benefitLol confidenceImg">
+        <div data-aos="fade-left" class="benefitLol confidenceImg">
           <h2>Confidential & Discreet</h2>
           <p>Your privacy is always protected.</p>
           <a href="/services.html"><button>See more</button></a>
         </div>
 
-        <div class="benefitLol debitImg">
+        <div data-aos="fade-left" class="benefitLol debitImg">
           <h2>Flexible Payment Options</h2>
           <p>Affordable solutions tailored to you.</p>
           <a href="/services.html"><button>See more</button></a>
@@ -142,4 +143,8 @@
     });
     
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 </html>
